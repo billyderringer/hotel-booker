@@ -1,10 +1,10 @@
-
-let days = document.getElementById('days'),
-  errCount = 0
+//prevents multiple errors
+let errCount = 0
 
 const container = document.getElementById('container-main'),
   form = document.getElementById('booking-form'),
-  rateCode = document.getElementById('rate-code')
+  rateCode = document.getElementById('rate-code'),
+  days = document.getElementById('days')
 
 function bookRoom() {
   if(days.value) {
@@ -41,6 +41,7 @@ function getCancellationPolicy(daysNum) {
         `to avoid the <strong>cancellation fee of 1 night charge.</strong>`
 }
 
+//resets application
 function reloadPage() {
   location.reload();
 }
