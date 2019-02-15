@@ -25,6 +25,8 @@ function bookRoom() {
   }
 }
 
+/* Cancellation logic - I chose to use template literals to work for the demo.
+Could easily change to store in state somewhere. */
 function getCancellationPolicy(daysNum) {
     if ( rateCode.value.toLowerCase() === 'nonref' ){
       return `Your booking is <strong>non-refundable & non-transferrable.</strong>`
