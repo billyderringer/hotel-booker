@@ -41,7 +41,6 @@ $purple: #800080;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
   #booking-form{
     background-color: $opaque-white;
     display: flex;
@@ -69,7 +68,6 @@ $purple: #800080;
         }
       }
     }
-
   }
 }
 
@@ -89,8 +87,5 @@ $purple: #800080;
   }
   p:last-of-type{
     margin-bottom: 20px;
-  }
-  @media (max-width: 375px) {
-    width: 90%;
   }
 }
