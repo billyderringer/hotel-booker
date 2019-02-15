@@ -1,16 +1,36 @@
+//utilities
 $opaque-white: rgba(255,255,255,.5);
 $white: #fff;
 $grey: #494949;
 $purple: #800080;
 
+.error{
+  color: red;
+  padding: 10px 0;
+}
 
+.btn-purple{
+  border: none;
+  border-radius: 3px;
+  padding: 8px 13px;
+  background-color: $purple;
+  color: $white;
+  &:hover{
+    cursor: pointer;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+
+//reset
 *{
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 }
 
-
+//landing page
 #container-main{
   width: 100%;
   height: 100vh;
@@ -53,6 +73,7 @@ $purple: #800080;
   }
 }
 
+//populated from JS template
 #container-receipt{
   width: 50%;
   background-color: $opaque-white;
@@ -71,24 +92,5 @@ $purple: #800080;
   }
   @media (max-width: 375px) {
     width: 90%;
-  }
-}
-
-.error{
-  color: red;
-  padding: 10px 0;
-}
-
-.btn-purple{
-  border: none;
-  border-radius: 3px;
-  padding: 8px 13px;
-  background-color: $purple;
-  color: $white;
-  &:hover{
-    cursor: pointer;
-  }
-  &:focus{
-    outline: none;
   }
 }

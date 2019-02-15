@@ -1,3 +1,18 @@
+.error {
+  color: red;
+  padding: 10px 0; }
+
+.btn-purple {
+  border: none;
+  border-radius: 3px;
+  padding: 8px 13px;
+  background-color: #800080;
+  color: #fff; }
+  .btn-purple:hover {
+    cursor: pointer; }
+  .btn-purple:focus {
+    outline: none; }
+
 * {
   margin: 0;
   padding: 0;
@@ -54,20 +69,5 @@
   @media (max-width: 375px) {
     #container-receipt {
       width: 90%; } }
-
-.error {
-  color: red;
-  padding: 10px 0; }
-
-.btn-purple {
-  border: none;
-  border-radius: 3px;
-  padding: 8px 13px;
-  background-color: #800080;
-  color: #fff; }
-  .btn-purple:hover {
-    cursor: pointer; }
-  .btn-purple:focus {
-    outline: none; }
 
 /*# sourceMappingURL=style.css.map */
