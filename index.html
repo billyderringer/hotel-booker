@@ -11,10 +11,18 @@
   <section id="container-main">
     <div id="booking-form">
       <label id="days-label" for="days">
-        How many days would you like to stay?
+        How many days would you like to book?
       </label>
       <div>
-        <input id="days" type="number" min="1" value="1" />
+        <input id="rate-code"
+               class="input"
+               type="text"
+               placeholder="Rate Code">
+        <input id="days"
+               class="input"
+               type="number"
+               min="1"
+               value="1" />
         <button class="btn-purple"
                 onclick="bookRoom()" >
           Book Now!

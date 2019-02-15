@@ -13,6 +13,14 @@
   .btn-purple:focus {
     outline: none; }
 
+.input {
+  width: 20%;
+  padding: 3px;
+  border: none;
+  border-radius: 3px; }
+  .input:focus {
+    outline: none; }
+
 * {
   margin: 0;
   padding: 0;
@@ -43,14 +51,8 @@
     #container-main #booking-form div {
       display: flex;
       justify-content: space-evenly;
+      flex-wrap: wrap;
       margin-top: 20px; }
-      #container-main #booking-form div #days {
-        width: 20%;
-        padding: 3px;
-        border: none;
-        border-radius: 3px; }
-        #container-main #booking-form div #days:focus {
-          outline: none; }
 
 #container-receipt {
   width: 50%;

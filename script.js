@@ -3,7 +3,8 @@ let days = document.getElementById('days'),
   errCount = 0
 
 const container = document.getElementById('container-main'),
-  form = document.getElementById('booking-form')
+  form = document.getElementById('booking-form'),
+  rateCode = document.getElementById('rate-code')
 
 function bookRoom() {
   if(days.value) {
@@ -25,7 +26,7 @@ function bookRoom() {
 }
 
 function getCancellationPolicy(daysNum) {
-    if ( daysNum === 'NONREF' ){
+    if ( rateCode.value.toLowerCase() === 'nonref' ){
       return `Your booking is <strong>non-refundable & non-transferrable.</strong>`
     }
     if ( daysNum >= 7 && daysNum <= 28 ) {
